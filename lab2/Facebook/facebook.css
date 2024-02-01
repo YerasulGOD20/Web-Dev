@@ -1,0 +1,113 @@
+@import url(reset.css);
+.main{
+    padding: 10%;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    background: #f0f2f5;
+    min-width: 500px;
+}
+.main-text{
+    width: 40%;
+}
+.main-text img{
+    /* color:#1c79f2;
+    font-size: 64px; */
+    width: 200px;
+    height: 70px;
+}
+.main-text p{
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    margin-left: 20px;
+}
+.main-login{
+    width: 384px;
+}
+.main-login--item{
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    box-sizing: border-box;
+    width: 384px;
+    
+}
+.main-login--item input{
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 330px;
+    border-radius: 6px;
+    font-family: inherit;
+    height: 22px;
+    line-height: 16px;
+    vertical-align: middle;
+    border: 1px solid #dddfe2;
+    color:#dddfe2 ;
+    margin: 10px;
+}
+.main-login--item button:nth-child(3){
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 332px;
+    color: #fff;
+    margin: 10px 26px;
+}
+.main-login--item p{
+    text-align: center;
+    color:#1877f2;
+    font-weight: 500;
+    margin: 10px;
+}
+.main-login--item hr{
+    border: 0.2px solid #dadde1;
+    background:#dadde1 ;
+    width: 330px;
+}
+.main-login--item button:nth-child(6){
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    background-color: #42b72a;
+    color: #fff;
+    width: 230px;
+    margin: 10px 77px;
+}
+.main-login>p{
+    text-align: center;
+    margin: 20px;
+}
+.main-login p span{
+    font-weight: 700;
+}
+.end{
+    padding: 0 10%;
+}
+.end-language{
+    padding: 10px;
+    border-bottom: 0.2px solid #dadde1;
+}
+.end-language a, .end-language button{
+    color: #8a8d91;
+    line-height: 1.6;
+    margin-right: 10px;
+}
+.end-links{
+    padding: 10px;
+}
+.end-links a{
+    color: #8a8d91;
+    margin-right: 10px;
+    line-height: 1.6;
+}
+.end-links a span{
+    color: #405d9b;
+}
