@@ -48,20 +48,23 @@
     color:#dddfe2 ;
     margin: 10px;
 }
-.main-login--item button:nth-child(3){
-    background-color: #1877f2;
+
+
+
+
+.main-login--item button{
     border: none;
-    border-radius: 6px;
-    font-size: 20px;
-    line-height: 48px;
-    padding: 0 16px;
-    width: 332px;
-    color: #fff;
-    margin: 10px 26px;
+    border-radius: 5px;
+    font-size: 10px;
+    margin: 0px;
+    padding: 30px 0px;
+    width: 100%;
+    background-color: #1877f2;
+
 }
 .main-login--item p{
     text-align: center;
-    color:#1877f2;
+    color:#1877f2;  
     font-weight: 500;
     margin: 10px;
 }
