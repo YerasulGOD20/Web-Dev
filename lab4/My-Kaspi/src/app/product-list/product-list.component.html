@@ -1,0 +1,31 @@
+
+
+<div *ngFor = "let product of products" class = "main-product">
+    <div class="crop">
+        <img src = {{product.img}} alt = "photo"  class = "img-crop" >  
+    </div>
+    <div class = "text-content">
+        <h3>
+            <a [title] = "product.name + ' details'" >
+                {{product.name}}
+            </a>
+        </h3>
+
+        <!-- <p *ngIf = "product.description">
+            {{product.description}}
+        </p> -->
+        <div class = "rate-price-info">
+            <p *ngIf = "product.price" class = "right-border" style="display:flex; flex-direction:column; justify-content: center; align-items: center;">
+                Цена: <br><br><strong> {{product.price}}</strong>
+            </p>
+            
+            <p *ngIf = "product.rating" style="display:flex; flex-direction:column; justify-content: center; align-items: center;">
+                Оценка: <br><br><strong> {{product.rating}}</strong>
+            </p>
+        </div>
+
+        <button type="button"  class = "detail-button" [routerLink] = "['/products', product.name]">
+            Read more
+        </button>
+    </div>
+</div>

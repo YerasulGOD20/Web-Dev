@@ -1,0 +1,174 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+app-top-bar {
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 8%);
+  padding: 8px;
+}
+
+h1{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.logo-side{
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  margin-left: 5%;
+  height: 100%;
+  align-items: center;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  justify-items: center;
+}
+  
+app-product-list{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main-product{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+
+  border: 2px solid rgba(195, 194, 194, 0.43);
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  box-shadow: 4px 4px 5px 1px rgb(0 0 0 / 8%);
+
+}
+
+.crop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 290px;
+
+}
+.img-crop{
+  width: 75%;
+  /* height: 90%; */
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+.text-content{
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 20px; */
+  border-top: 2px solid rgba(195, 194, 194, 0.43);
+  padding: 10px;
+  justify-content: space-evenly;
+}
+
+.rate-price-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.detail-button{
+  background-color: rgb(241,70,53);
+  color: white;
+  width: 30%;
+  height: 30px;
+  margin-left:60%;
+  border-radius: 4px;
+  border: none;
+}
+
+.right-border{
+  padding-right: 15%;
+  border-right: 2px solid  rgba(195, 194, 194, 0.43);
+
+}
+
+p{
+  color:rgb(110, 110, 110);
+}
+strong{
+  color: black;
+  font-size: large;
+}
+
+
+.detail-of-product{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 20px;
+  width: 90%;
+  box-shadow: 0 0 5px 1px rgb(0 0 0 / 8%);;
+}
+
+.crop2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+
+
+
+
+.text-content2{
+  margin-left: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 20px; */
+  /* border-top: 2px solid rgba(195, 194, 194, 0.43); */
+  padding: 10px;
+  justify-content: space-between;
+}
+
+
+.redirect-button{
+  background: none ;
+  border: none;
+  width: fit-content;
+}
+
+
+.buttons{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.share-buttons{
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+}
+
