@@ -16,7 +16,6 @@ for (i = 0; i < close.length; i++) {
     div.style.display = "none";
   }
 }
-
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
@@ -35,7 +34,6 @@ function newElement() {
     document.getElementById("myUL").appendChild(li);
   }
   document.getElementById("myInput").value = "";
-
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
@@ -49,3 +47,16 @@ function newElement() {
     }
   }
 }
+function solution(x) {
+  var k = 0
+  if (x===x.split("").reverse().join("")) {
+      return true
+  }
+  for (var i = 0; i < x.length; i++) {
+      if (x[i]==x[i+1]) {
+          k++
+      }
+  } 
+  return k>=x.length/2?true:false 
+} 
+

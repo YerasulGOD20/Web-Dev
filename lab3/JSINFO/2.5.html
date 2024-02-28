@@ -1,6 +1,6 @@
 <!--console.log(55684 + 6);
 alert( `Hello, ${admin}!` );
-console.log(typeof(message))
+console.log(typeof(message))-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,13 +10,14 @@ console.log(typeof(message))
     <title>Document</title>
 </head>
 <body>
+    <script>
+        name = "Ilya";
+
+        alert( `hello ${1}` ); // ? hello 1
+        
+        alert( `hello ${"name"}` ); // ? hello name
+        
+        alert( `hello ${name}` ); // ? hello Ilya</script>
     <script src="script.js"></script>
 </body>
 </html>
-let name = "Ilya";
-
-alert( `hello ${1}` ); // ? hello 1
-
-alert( `hello ${"name"}` ); // ? hello name
-
-alert( `hello ${name}` ); // ? hello Ilya
