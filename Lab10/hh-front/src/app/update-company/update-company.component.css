@@ -1,0 +1,117 @@
+li{
+    list-style: none;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* left: 20px; */
+    width: 80%;
+    margin-left: 120px;
+    /* flex-wrap: wrap; */
+}
+
+.add-btn{
+    height: 35px;
+    background-color: rgb(214,0,28);
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.list{
+    padding: 10px 80px 10px 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    gap: 20px;
+
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 250px;
+    border: 2px solid rgba(195, 194, 194, 0.43);
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin: 10px; */
+    box-shadow: 4px 4px 5px 1px rgb(0 0 0 / 8%);
+    padding: 15px 10px 10px 10px;
+    /* align-items:center; */
+    /* justify-content: space-between; */
+}
+
+
+
+
+
+a{
+    font-size: 19px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+.upd-del-btn{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40%;
+    margin-left: 10px;
+}
+
+
+.del-btn{
+    height: 35px;
+    width: 45%;
+    background-color: rgb(214,0,28);
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;   
+    cursor: pointer;;
+}
+
+.upd-btn{
+    height: 35px;
+    width: 45%;
+    border: 2px solid rgb(214,0,28);
+    color: rgb(214,0,28);
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+
+li{
+    box-shadow: 0 13px 27px -5px hsla(240, 30.1%, 28%, 0.25), 0 8px 16px -8px hsla(0, 0%, 0%, 0.3), 0 -6px 16px -6px hsla(0, 0%, 0%, 0.03);
+    transition: all ease 200ms;
+}
+li:hover{
+    transform: scale(1.03);
+    box-shadow: 0 13px 40px -5px hsla(240, 30.1%, 28%, 0.12), 0 8px 32px -8px hsla(0, 0%, 0%, 0.14), 0 -6px 32px -6px hsla(0, 0%, 0%, 0.02);
+}
+
+.salara-text{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-left: 60%;
+}

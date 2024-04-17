@@ -1,0 +1,16 @@
+<fieldset>
+    <label>Company name: </label>
+    <input type="text" [(ngModel)]="newName">
+  
+    <label>Company description: </label>
+    <input type="text" [(ngModel)]="newDescription">
+  
+    <label>Company city: </label>
+    <input type="text" [(ngModel)]="newCity">
+    
+    <label>Company address: </label>
+    <input type="text" [(ngModel)]="newAddress">
+    
+    <button (click)="updateCompany()" class="add-btn" routerLink = '/companies/{{company.id}}' >Update company</button>
+</fieldset>
+  

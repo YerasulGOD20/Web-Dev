@@ -1,0 +1,37 @@
+
+<fieldset>
+  <label>Company name: </label>
+  <input type="text" [(ngModel)]="newName">
+
+  <label>Company description: </label>
+  <input type="text" [(ngModel)]="newDescription">
+
+  <label>Company city: </label>
+  <input type="text" [(ngModel)]="newCity">
+  
+  <label>Company address: </label>
+  <input type="text" [(ngModel)]="newAddress">
+  
+  <button (click)="addCompany()" class="add-btn">Add company</button>
+</fieldset>
+
+
+<!-- <h2>Companies</h2> -->
+
+
+<ul class="list">
+  <li *ngFor="let company of companies"  >
+    <div routerLink ='/companies/{{company.id}}' class = "company">
+      <a  >{{company.name}}</a>
+      <p>{{company.description}}</p>
+      <p class="address-text">{{company.city}}, {{company.address}}</p>
+
+
+      <div class="upd-del-btn">
+        <button class="upd-btn" routerLink = '/companies/{{company.id}}/update'>Update</button>
+        <button class="del-btn" (click) = "deleteCompany(company.id)">Delete</button>
+      </div>
+    </div>
+  </li>
+</ul>
+

@@ -1,0 +1,50 @@
+<div class="company-info">
+    <h1>{{company.name}}</h1>
+
+    <p>{{company.description}}</p>
+
+    <p>{{company.city}}, <span>{{company.address}}</span></p>
+</div>
+
+
+
+
+<fieldset>
+    <label>Vacancy name: </label>
+    <input type="text" [(ngModel)]="newName">
+  
+    <label>Vacancy description: </label>
+    <input type="text" [(ngModel)]="newDescription">
+  
+    <label>Vacancy salary: </label>
+    <input type="text" [(ngModel)]="newSalary">
+    
+    
+    <button (click)="addVacancy()" class="add-btn">Add New Vacancy</button>
+</fieldset>
+
+<h2 style="margin-left: 160px;">Vacancies</h2>
+
+<ul class="list">
+    <li *ngFor="let vacancy of vacancies_of_company"  >
+        <div>
+        <a >{{vacancy.name}}</a>
+        <!-- <p>{{vacancy.company}}</p> -->
+        <p>{{vacancy.description}}</p>
+        <p class="salara-text">{{vacancy.salary}}</p>
+
+
+        <div class="upd-del-btn">
+            <button class="upd-btn" routerLink = '/vacancies/{{vacancy.id}}/update'>Update</button>
+            <button class="del-btn" (click) = "deleteVacancy(vacancy.id)" >Delete</button>
+            <!-- (click) = "deleteCompany(company.id)" -->
+        </div>
+        </div>
+    </li>
+</ul>
+
+
+
+
+
+

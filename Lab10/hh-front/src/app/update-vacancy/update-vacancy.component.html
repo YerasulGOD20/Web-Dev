@@ -1,0 +1,18 @@
+<fieldset>
+    <label>Vacancy name: </label>
+    <input type="text" [(ngModel)]="newName">
+  
+    <label>Vacancy description: </label>
+    <input type="text" [(ngModel)]="newDescription">
+  
+    <label>Vacancy salary: </label>
+    <input type="text" [(ngModel)]="newSalary">
+    
+    <label>Company: </label>
+    <select  [(ngModel)]="newCompany">
+        <option *ngFor="let company of companies" [value]="company.id"> {{company.name}}</option>
+    </select>
+    
+    <button (click)="updateVacancy()" class="add-btn" routerLink = '/companies'>Add Vacancy</button>
+</fieldset>
+  
